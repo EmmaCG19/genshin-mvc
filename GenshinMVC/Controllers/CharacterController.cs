@@ -10,7 +10,6 @@ namespace GenshinMVC.Controllers
 {
     public class CharacterController : Controller
     {
-
         static IList<CharacterVM> characters;
         const int MAX_NUMBER_OF_CHARA = 25;
 
@@ -32,7 +31,7 @@ namespace GenshinMVC.Controllers
         }
 
 
-        //Data Source???
+        //Private methods
         private static IList<CharacterVM> LoadCharactersSample()
         {
             Random rnd = new Random(MAX_NUMBER_OF_CHARA);
@@ -55,7 +54,7 @@ namespace GenshinMVC.Controllers
             return rnd.Next(1, MAX_NUMBER_OF_CHARA);
         }
 
-      
+
 
     }
 }

@@ -2,48 +2,28 @@
 
 @{
     ViewBag.Title = "Characters";
+    ViewBag.characterIconURL = "https://rerollcdn.com/GENSHIN/Characters/";
+    ViewBag.elementIconURL = "https://rerollcdn.com/GENSHIN/Elements/";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@ViewBag.Title</h2>
+
 
 <section>
-    <div class="row d-flex justify-content-center">
-        <div class="col-lg-10 col-md-12 col-sm-12">
-            <main class="content">
-                <table class="table table-hover table-dark">
-                    <caption>List of Characters</caption>
-                    <tr>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Id)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Name)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Vision)
-                        </th>
-                        <th></th>
-                    </tr>
-
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>@Html.DisplayFor(modelItem => item.Id) </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Name)
-                            </td>
-                            <td>@Html.DisplayFor(modelItem => item.Vision) </td>
-                            <td>
-                                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                            </td>
-                        </tr>
-                    }
-
-                </table>
-            </main>
-        </div>
+    <header class="row d-flex justify-content-center">
+        <h2>@ViewBag.Title</h2>
+    </header>
+    <div class="row d-flex flex-row flex-wrap justify-content-center">
+        <main class="content col-md-10 col-sm-12">
+            @foreach (var character in Model)
+            {
+                <a class="character-portrait" href=@Url.Action("Index", "CharacterDetails", new { id = character.Id }) target="_self">
+                    <img class="character-element" src=@String.Concat(ViewBag.elementIconURL, "Element_", character.Vision, ".png") alt="@character.Vision" />
+                    <img class="character-icon" src=@String.Concat(ViewBag.characterIconURL, character.Name,".png") alt="@character.Name">
+                    <span class="character-title">@character.Name</span>
+                </a>
+            }
+        </main>
     </div>
 </section>
+
