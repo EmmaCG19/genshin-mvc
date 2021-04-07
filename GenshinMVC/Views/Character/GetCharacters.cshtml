@@ -25,8 +25,8 @@
                     <img class="character-icon" src=@String.Concat(characterIconURL, character.Name,".png") alt="@character.Name">
                     <span class="character-name">@character.Name</span>
                     <div class="nav-options">
-                        <a href=@Url.Action("Index", "CharacterDetails", new { id = character.Id, edit = true}) target="_self">Edit</a>
-                        <a href=@Url.Action("Index", "CharacterDetails", new { id = character.Id, edit = false }) target="_self">View</a>
+                        <a href=@Url.Action("edit", "CharacterDetails", new { id = character.Id}) target="_self">Edit</a>
+                        <a href=@Url.Action("view", "CharacterDetails", new { id = character.Id}) target="_self">View</a>
                     </div>
                 </div>
             }

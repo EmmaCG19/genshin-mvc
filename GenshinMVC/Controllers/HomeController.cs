@@ -12,7 +12,7 @@ namespace GenshinMVC.Controllers
     {
         public HomeController()
         {
-            //Instancio por única vez el DALMapper en el Index del HomeController
+            //Instancio por única vez el DALMapper
             var mapper = new CharacterDALMapper(new CharactersDAL());
 
         }

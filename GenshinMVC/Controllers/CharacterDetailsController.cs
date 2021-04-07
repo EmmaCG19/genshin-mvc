@@ -11,39 +11,36 @@ namespace GenshinMVC.Controllers
 {
     public class CharacterDetailsController : Controller
     {
-        public ActionResult Index(int id, bool edit)
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        [ActionName("Edit")]
+        public ActionResult EditCharacter(int id)
+        {
+            return CharacterDetails(id, "EditCharacter");
+        }
+
+        [HttpGet]
+        [ActionName("View")]
+        public ActionResult ViewCharacter(int id)
+        {
+            return CharacterDetails(id, "ViewCharacter");
+        }
+
+        [NonAction]
+        public ActionResult CharacterDetails(int id, string viewName)
         {
             CharacterVM model = CharacterDALMapper.FindById(id);
 
-            if (model != null)
-            {
-                if (edit)
-                {
-                    return RedirectToAction("EditCharacter", "CharacterDetails", model);
-                }
-                else
-                {
-                    return RedirectToAction("ViewCharacter", "CharacterDetails", model);
-                }
-            }
-            else
+            if (model == null)
             {
                 return View("Error");
             }
 
-
-        }
-
-        [HttpGet]
-        public ActionResult EditCharacter(CharacterVM character)
-        {
-            return Content($"<h1>{character.Name} - Edit</h1>");
-        }
-
-        [HttpGet]
-        public ActionResult ViewCharacter(CharacterVM character)
-        {
-            return Content($"<h1>{character.Name} - Edit</h1>");
+            return View(viewName, model);
         }
 
     }
