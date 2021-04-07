@@ -128,6 +128,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CharacterDALMapper.cs" />
+    <Compile Include="Helpers\ICharacterDALMapper.cs" />
     <Compile Include="Models\CharacterVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -175,6 +177,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\test-scripts\character-index.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
@@ -257,8 +260,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Character\GetCharacters.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
@@ -276,7 +277,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
-    <Folder Include="Views\CharacterDetail\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -284,6 +284,10 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GenshinDataAccess\GenshinDAL.csproj">
+      <Project>{48519e6b-7ed8-4c93-ae16-45cd4d19f1eb}</Project>
+      <Name>GenshinDAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GenshinLibrary\GenshinLibrary.csproj">
       <Project>{90709f49-620b-4485-b12f-50ea17830a44}</Project>
       <Name>GenshinLibrary</Name>

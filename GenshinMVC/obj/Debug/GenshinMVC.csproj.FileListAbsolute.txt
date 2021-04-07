@@ -51,6 +51,7 @@ C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\roslyn\vbc.rsp
 C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\roslyn\VBCSCompiler.exe
 C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\Antlr3.Runtime.dll
+C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\GenshinDAL.dll
 C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\GenshinLibrary.dll
 C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\Microsoft.Web.Infrastructure.dll
@@ -63,6 +64,7 @@ C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\System.Web.WebPages.Dep
 C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\System.Web.WebPages.dll
 C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\System.Web.WebPages.Razor.dll
 C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\WebGrease.dll
+C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\GenshinDAL.pdb
 C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\GenshinLibrary.pdb
 C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\System.Web.Helpers.xml
 C:\Users\emman\source\repos\GenshinSample\GenshinMVC\bin\System.Web.Mvc.xml

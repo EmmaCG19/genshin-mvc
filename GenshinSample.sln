@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenshinLibrary", "GenshinLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenshinMVC", "GenshinMVC\GenshinMVC.csproj", "{7C9F3E8D-5EC2-45B0-BE2B-BF75AC12FCD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenshinDAL", "GenshinDataAccess\GenshinDAL.csproj", "{48519E6B-7ED8-4C93-AE16-45CD4D19F1EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7C9F3E8D-5EC2-45B0-BE2B-BF75AC12FCD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C9F3E8D-5EC2-45B0-BE2B-BF75AC12FCD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C9F3E8D-5EC2-45B0-BE2B-BF75AC12FCD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48519E6B-7ED8-4C93-AE16-45CD4D19F1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48519E6B-7ED8-4C93-AE16-45CD4D19F1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48519E6B-7ED8-4C93-AE16-45CD4D19F1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48519E6B-7ED8-4C93-AE16-45CD4D19F1EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

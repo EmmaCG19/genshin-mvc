@@ -2,28 +2,36 @@
 
 @{
     ViewBag.Title = "Characters";
-    ViewBag.characterIconURL = "https://rerollcdn.com/GENSHIN/Characters/";
-    ViewBag.elementIconURL = "https://rerollcdn.com/GENSHIN/Elements/";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var characterIconURL = "https://rerollcdn.com/GENSHIN/Characters/";
+    var elementIconURL = "https://rerollcdn.com/GENSHIN/Elements/";
 }
 
 
+<header class="mt-2 mb-4">
+    <h2 class="text-center">@ViewBag.Title</h2>
+</header>
 
 <section>
-    <header class="row d-flex justify-content-center">
-        <h2>@ViewBag.Title</h2>
-    </header>
-    <div class="row d-flex flex-row flex-wrap justify-content-center">
+    <div class="row d-flex flex-col flex-wrap justify-content-center">
         <main class="content col-md-10 col-sm-12">
             @foreach (var character in Model)
             {
-                <a class="character-portrait" href=@Url.Action("Index", "CharacterDetails", new { id = character.Id }) target="_self">
-                    <img class="character-element" src=@String.Concat(ViewBag.elementIconURL, "Element_", character.Vision, ".png") alt="@character.Vision" />
-                    <img class="character-icon" src=@String.Concat(ViewBag.characterIconURL, character.Name,".png") alt="@character.Name">
-                    <span class="character-title">@character.Name</span>
-                </a>
+                <div class="character-portrait">
+
+                    @* If character doesnt exist / use placeholders as src *@
+
+                    <img class="character-element" src=@String.Concat(elementIconURL, "Element_", character.Vision, ".png") alt="@character.Vision" />
+                    <img class="character-icon" src=@String.Concat(characterIconURL, character.Name,".png") alt="@character.Name">
+                    <span class="character-name">@character.Name</span>
+                    <div class="nav-options">
+                        <a href=@Url.Action("Index", "CharacterDetails", new { id = character.Id, edit = true}) target="_self">Edit</a>
+                        <a href=@Url.Action("Index", "CharacterDetails", new { id = character.Id, edit = false }) target="_self">View</a>
+                    </div>
+                </div>
             }
         </main>
     </div>
 </section>
 
+@Scripts.Render("~/bundles/scripts")

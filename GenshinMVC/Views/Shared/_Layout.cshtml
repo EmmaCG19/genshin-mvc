@@ -9,21 +9,14 @@
 </head>
 <body>
 
-    @*<navbar class="navbar navbar-fixed-top">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-nav navbar-light">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Characters", "Index", "Character")</li>
-                </ul>
-            </div>
+            <div class="row"></div>
         </div>
-    </navbar>*@
+    </nav>
+
+
     <div class="container">
         @RenderBody()
     </div>
