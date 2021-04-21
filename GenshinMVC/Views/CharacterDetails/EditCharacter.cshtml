@@ -4,7 +4,6 @@
 @{
     ViewBag.Title = "Edit Character";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var imgURL = "https://rerollcdn.com/GENSHIN/Characters/";
 
 }
 
@@ -76,12 +75,12 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                <div class="form-group text-center pt-2">
-                    <img class="img-thumbnail mb-3" src=@String.Concat(imgURL, Model.Name,".png") alt="@Model.Name" />
+                <div class="form-group text-center pt-2 w-50">
+                    <img class="img-thumbnail mb-3" src="https://via.placeholder.com/200?text=avatar+icon" alt="uploaded_avatar" />
                     <input class="form-control-file"
                            type="file"
                            name="characterIcon"
-                           id="characterIcon" />
+                           id="characterIcon" disabled />
                 </div>
             </div>
             <div class="p-2 w-100 text-right">

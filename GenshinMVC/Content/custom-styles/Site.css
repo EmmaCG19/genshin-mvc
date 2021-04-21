@@ -14,7 +14,7 @@
     --color-pyro: #ed9057;
     --color-anemo: #a6f4cc;
     --color-geo: #f3d661;
-    --color-hydro: #08def9;
+    --color-hydro: #5ad7e8;
     --color-dendro: #b0e82b;
     --color-electro: #af73dc;
 }
@@ -25,13 +25,21 @@
     box-sizing: border-box;
 }
 
+html {
+    background: url(https://wallpapercave.com/wp/wp7487214.jpg) no-repeat center center fixed;
+    --webkit-background-size: cover;
+    --moz-background-size: cover;
+    --o-background-size: cover;
+    background-size: cover;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #fff;
-    background: #1d1f29;
     height: 80vh;
+    background: transparent;
 }
 
 a,
@@ -54,14 +62,15 @@ a:hover {
 
 .brand {
     margin-right: 1rem;
-    box-shadow: inset -5px 0 20px 1px var(--color-dendro);
+    box-shadow: inset -5px 0 20px 1px var(--color-cryo);
     border-radius: 50px;
     padding: 5px;
+    overflow:hidden;
 }
 
     .brand img {
-        width: 48px;
-        transform: rotate(-45deg);
+        width: 50px;
+        transform: rotate(-15deg);
         opacity: 0.5;
     }
 
@@ -117,14 +126,13 @@ a:hover {
 }
 
 .character-container {
-    min-width: fit-content;
     width: 100%;
     margin: 5px 0;
 }
 
 .character-portrait {
     position: relative;
-    width: fit-content;
+    width: min-content;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -169,12 +177,12 @@ a:hover {
     }
 
 .details-icon {
-    opacity: 0.7;
+    opacity: 0.4;
 }
 
     .details-icon:hover {
-        color: var(--color-dendro);
-        opacity: 0.9;
+        color: whitesmoke;
+        opacity: 0.8;
     }
 
 /* Custom text */
@@ -218,8 +226,13 @@ a:hover {
 
 /*****VIEW-CHARACTER SECTION********/
 
-.character-vision,
-.character-weapon {
+.character-view-vision,
+.character-view-weapon {
+    width: var(--character-icons-size);
+    height: var(--character-icons-size);
+}
+
+.character-view-icon {
     width: var(--character-icons-size);
     height: var(--character-icons-size);
 }
@@ -228,6 +241,10 @@ a:hover {
 .img-thumbnail {
     width: 106px;
     height: 106px;
+}
+
+.form-control-file {
+    overflow: hidden;
 }
 
 .btn-update {
@@ -276,9 +293,10 @@ a:hover {
 }
 
 /*Helpers*/
-
-/* h2,
+/*span,
+h2,
 div,
+input,
 .col-md-1,
 .col-md-2,
 .col-md-3,
@@ -316,5 +334,6 @@ div,
 .col-11,
 .col-12,
 .row {
-  border: var(--border-default);
-} */
+    border: var(--border-default);
+}
+*/

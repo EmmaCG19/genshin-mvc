@@ -40,18 +40,18 @@
 <main class="content content-col">
     <section class="row">
         <div class="col-12 text-center">
-            <img class="character-avatar p-2" src="@String.Concat(characterIconURL, Model.Name,".png")" alt="@(Model.Name)_avatar" />
+            <img class="character-view-icon p-2" src="@String.Concat(characterIconURL, Model.Name,".png")" alt="@(Model.Name)_avatar" />
             <h2 class="@textColor">@Model.Name</h2>
         </div>
         <div class="col-12">
             <div class="row w-50 m-auto">
                 <div class="col-12 col-sm-6 p-2 d-flex flex-column justify-content-center align-items-center">
                     <span>@Model.Vision</span>
-                    <img class="character-vision" src="@String.Concat(visionIconURL, "Element_", Model.Vision, ".png")" alt="@(Model.Vision)_icon" />
+                    <img class="character-view-vision" src="@String.Concat(visionIconURL, "Element_", Model.Vision, ".png")" alt="@(Model.Vision)_icon" />
                 </div>
                 <div class="col-12 col-sm-6 p-2 d-flex flex-column justify-content-center align-items-center">
                     <span>@Model.Weapon</span>
-                    <img class="character-weapon" src="@String.Concat(weaponIconURL, Model.Weapon, ".png")" alt="@(Model.Weapon)_icon" />
+                    <img class="character-view-weapon" src="@String.Concat(weaponIconURL, Model.Weapon, ".png")" alt="@(Model.Weapon)_icon" />
                 </div>
             </div>
         </div>
