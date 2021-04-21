@@ -11,35 +11,32 @@
 <header class="mt-2 mb-4">
     <h2 class="text-center">@ViewBag.Title</h2>
 </header>
-
-<section>
-    <div class="row d-flex flex-col flex-wrap justify-content-center">
-        <main class="content content-row col-md-10 col-sm-12">
-            @foreach (var character in Model)
-            {
-                <div class="character-portrait">
-
-                    @* If character doesnt exist / use placeholders as src *@
-
-                    <img class="character-element" src=@String.Concat(elementIconURL, "Element_", character.Vision, ".png") alt="@character.Vision" />
-                    <img class="character-icon" src=@String.Concat(characterIconURL, character.Name,".png") alt="@character.Name">
+<main class="content content-col">
+    <div class="characters-list">
+        @foreach (var character in Model)
+        {
+            <div class="character-container">
+                <div class="character-portrait m-auto">
+                    <img class="character-element"
+                         src="@String.Concat(elementIconURL, "Element_", character.Vision, ".png")" alt="@character.Vision" />
+                    <img class="character-icon"
+                         src="@String.Concat(characterIconURL, character.Name,".png")" alt="@character.Name" />
                     <span class="character-name">@character.Name</span>
                     <div class="character-details">
-                        <a href=@Url.Action("view", "CharacterDetails", new { id = character.Id}) target="_self">
-                            <span class="material-icons details-icon">
-                                visibility
-                            </span>
+                        <a href="@Url.Action("view", "CharacterDetails", new { id = character.Id})" target="_self">
+                            <span class="material-icons details-icon"> visibility </span>
                         </a>
-                        <a href=@Url.Action("edit", "CharacterDetails", new { id = character.Id}) target="_self">
-                            <span class="material-icons details-icon">
-                                edit
-                            </span>
+                        <a href="@Url.Action("edit", "CharacterDetails", new { id = character.Id})" target="_self">
+                            <span class="material-icons details-icon"> edit </span>
                         </a>
                     </div>
                 </div>
-            }
-        </main>
+            </div>
+        }
     </div>
-</section>
+</main>
 
 @Scripts.Render("~/bundles/scripts")
+
+
+

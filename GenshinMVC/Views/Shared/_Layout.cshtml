@@ -13,21 +13,36 @@
 </head>
 <body>
 
-    <!-- Fixed navbar -->
-    <nav arial-label="primary" class="container-fluid">
-        <div class="row navbar">
-            <ul class="nav">
+    <nav aria-label="primary" class="navbar navbar-expand-md mb-4">
+        <a class="brand" href="#">
+            <img src="https://rerollcdn.com/GENSHIN/Elements/Element_Dendro.png"
+                 alt="page_icon" />
+        </a>
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#contentMenu"
+                aria-controls="contentMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span>
+                <i class="fas fa-bars hamburger-icon"></i>
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="contentMenu">
+            <ul class="navbar-nav align-items-center">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Item</a>
+                    <a class="nav-link" href="#">Characters</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Item</a>
+                    <a class="nav-link" href="#">Weapons</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Item</a>
+                    <a class="nav-link" href="#">Map</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Item</a>
+                    <a class="nav-link" href="#">Visions</a>
                 </li>
             </ul>
         </div>

@@ -1,6 +1,6 @@
 C:\Users\emman\source\repos\GenshinSample\GenshinLibrary\bin\Debug\GenshinLibrary.dll
 C:\Users\emman\source\repos\GenshinSample\GenshinLibrary\bin\Debug\GenshinLibrary.pdb
+C:\Users\emman\source\repos\GenshinSample\GenshinLibrary\obj\Debug\GenshinLibrary.csprojAssemblyReference.cache
 C:\Users\emman\source\repos\GenshinSample\GenshinLibrary\obj\Debug\GenshinLibrary.csproj.CoreCompileInputs.cache
 C:\Users\emman\source\repos\GenshinSample\GenshinLibrary\obj\Debug\GenshinLibrary.dll
 C:\Users\emman\source\repos\GenshinSample\GenshinLibrary\obj\Debug\GenshinLibrary.pdb
-C:\Users\emman\source\repos\GenshinSample\GenshinLibrary\obj\Debug\GenshinLibrary.csprojAssemblyReference.cache
