@@ -14,7 +14,7 @@
 
 <section>
     <div class="row d-flex flex-col flex-wrap justify-content-center">
-        <main class="content col-md-10 col-sm-12">
+        <main class="content content-row col-md-10 col-sm-12">
             @foreach (var character in Model)
             {
                 <div class="character-portrait">
@@ -24,9 +24,17 @@
                     <img class="character-element" src=@String.Concat(elementIconURL, "Element_", character.Vision, ".png") alt="@character.Vision" />
                     <img class="character-icon" src=@String.Concat(characterIconURL, character.Name,".png") alt="@character.Name">
                     <span class="character-name">@character.Name</span>
-                    <div class="nav-options">
-                        <a href=@Url.Action("edit", "CharacterDetails", new { id = character.Id}) target="_self">Edit</a>
-                        <a href=@Url.Action("view", "CharacterDetails", new { id = character.Id}) target="_self">View</a>
+                    <div class="character-details">
+                        <a href=@Url.Action("view", "CharacterDetails", new { id = character.Id}) target="_self">
+                            <span class="material-icons details-icon">
+                                visibility
+                            </span>
+                        </a>
+                        <a href=@Url.Action("edit", "CharacterDetails", new { id = character.Id}) target="_self">
+                            <span class="material-icons details-icon">
+                                edit
+                            </span>
+                        </a>
                     </div>
                 </div>
             }

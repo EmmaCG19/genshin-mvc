@@ -14,5 +14,6 @@ namespace GenshinMVC.Helpers
         void Update(CharacterVM character);
         void Delete(int characterId);
         CharacterVM FindById(int characterId);
+        CharacterVM FindByName(string characterName);
     }
 }

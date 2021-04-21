@@ -14,5 +14,6 @@ namespace GenshinDAL
         void Update(Character character);
         void Delete(int characterId);
         Character FindById(int characterId);
+        Character FindByName(string characterName);
     }
 }

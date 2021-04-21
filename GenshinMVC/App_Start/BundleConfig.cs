@@ -22,12 +22,16 @@ namespace GenshinMVC
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/bootstrap").Include(
+                      "~/Content/bootstrap.css"));
+
+            bundles.Add(new StyleBundle("~/Content/css")
+                    .IncludeDirectory("~/Content/custom-styles/", "*.css", false));
 
             bundles.Add(new ScriptBundle("~/bundles/scripts")
-                    .IncludeDirectory("~/Scripts/test-scripts/", "*.js", false));
+                    .IncludeDirectory("~/Scripts/custom-scripts/", "*.js", false));
+
+
         }
     }
 }

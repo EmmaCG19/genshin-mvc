@@ -16,7 +16,8 @@ namespace GenshinMVC
             routes.MapRoute(
                 name: "Character-Details",
                 url: "characters/{id}/details/{action}",
-                defaults: new { controller = "CharacterDetails", id = UrlParameter.Optional });
+                defaults: new { controller = "CharacterDetails", id = UrlParameter.Optional }
+            );
 
             routes.MapRoute(
                 name: "Characters-List",

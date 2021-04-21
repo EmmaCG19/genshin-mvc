@@ -99,5 +99,10 @@ namespace GenshinDAL
         {
             return _characters.Where(c => c.Id == characterId).FirstOrDefault();
         }
+
+        public Character FindByName(string characterName)
+        {
+            return _characters.Where(c => c.Name.ToLower() == characterName.ToLower()).FirstOrDefault();
+        }
     }
 }
