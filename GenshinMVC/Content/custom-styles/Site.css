@@ -4,6 +4,7 @@
 
 :root {
     --content-bg: #222431;
+    --secondary-bg: #36384a;
     --content-height: 100vh;
     --footer-height: 30px;
     --sm-breakpoint: 576px;
@@ -11,7 +12,7 @@
     --lg-breakpoint: 992px;
     --xl-breakpoint: 1200px;
     --border-default: 1px white solid;
-    --character-icons-size: 64px;
+    --character-icons-size: 106px;
     --color-cryo: #cefefe;
     --color-pyro: #ed9057;
     --color-anemo: #a6f4cc;
@@ -194,6 +195,19 @@ a:hover {
     margin-bottom: 5px;
 }
 
+/*.character-icon::before {
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background-image: url(https://via.placeholder.com/70?text=not+_+found);
+        z-index: -1;
+    }
+
+    .character-icon, .character-icon ::before {
+        
+    }
+*/
 .character-name {
     width: 100%;
     color: #a7b1c1;
@@ -273,6 +287,25 @@ a:hover {
     height: var(--character-icons-size);
 }
 
+
+
+.character-nav {
+    background-color: #393d57;
+    border-radius: 5px;
+    margin: 0 -15px;
+}
+
+    .character-nav a {
+        transition: background-color 0.2s ease-in-out 0s;
+        border-radius: 3px;
+    }
+
+        .character-nav a:hover {
+            background-color: #a7b1c1;
+            box-shadow: 0 0 5px #a7b1c1;
+        }
+
+
 /*****EDIT-CHARACTER SECTION********/
 .img-thumbnail {
     width: 106px;
@@ -305,10 +338,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-    :root {
-        --character-icons-size: 106px;
-    }
-
     .character-container {
         width: 20%;
     }
@@ -333,6 +362,8 @@ a:hover {
 /*span,
 h2,
 div,
+img,
+.navbar,
 .footer,
 .col-md-1,
 .col-md-2,

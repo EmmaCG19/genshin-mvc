@@ -8,39 +8,41 @@
 }
 
 <main class="content">
-    <h2 class="row">
-        @{
-            string textColor;
+    @*
+            @{
+                string textColor;
 
-            switch (Model.Vision)
-            {
-                case Vision.Anemo:
-                    textColor = "text-anemo";
-                    break;
-                case Vision.Pyro:
-                    textColor = "text-pyro";
-                    break;
-                case Vision.Hydro:
-                    textColor = "text-hydro";
-                    break;
-                case Vision.Dendro:
-                    textColor = "text-dendro";
-                    break;
-                case Vision.Cryo:
-                    textColor = "text-cryo";
-                    break;
-                case Vision.Geo:
-                    textColor = "text-geo";
-                    break;
-                default:
-                    textColor = "text-other";
-                    break;
+                switch (Model.Vision)
+                {
+                    case Vision.Anemo:
+                        textColor = "text-anemo";
+                        break;
+                    case Vision.Pyro:
+                        textColor = "text-pyro";
+                        break;
+                    case Vision.Hydro:
+                        textColor = "text-hydro";
+                        break;
+                    case Vision.Dendro:
+                        textColor = "text-dendro";
+                        break;
+                    case Vision.Cryo:
+                        textColor = "text-cryo";
+                        break;
+                    case Vision.Geo:
+                        textColor = "text-geo";
+                        break;
+                    default:
+                        textColor = "text-other";
+                        break;
+                }
+
             }
 
-        }
-
-        <span class="@textColor">@Model.Name</span>
-    </h2>
+        <h2 class="row">
+            <span class="text-other m-auto">@Model.Name</span>
+        </h2>
+    *@
     @using (Html.BeginForm("Edit", "CharacterDetails", FormMethod.Post))
     {
 

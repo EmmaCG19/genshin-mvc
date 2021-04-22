@@ -38,9 +38,9 @@
 }
 
 <main class="content content-col">
-    <section class="row">
+    <section class="row p-3">
         <div class="col-12 text-center">
-            <img class="character-view-icon p-2" src="@String.Concat(characterIconURL, Model.Name,".png")" alt="@(Model.Name)_avatar" />
+            <img class="character-view-icon p-2" src="@String.Concat(characterIconURL, Model.Name, ".png")" alt="@(Model.Name)_avatar" />
             <h2 class="@textColor">@Model.Name</h2>
         </div>
         <div class="col-12">
@@ -56,10 +56,10 @@
             </div>
         </div>
     </section>
-    <nav arial-label="secondary" class="row navbar">
+    <nav arial-label="secondary" class="navbar character-nav">
         <ul class="nav">
             <li>
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link active" href="#">Skills</a>
             </li>
             <li>
                 <a class="nav-link" href="#">Passive</a>
@@ -70,7 +70,7 @@
         </ul>
         <div>
             <a class="nav-link"
-               href="https://genshin-impact.fandom.com/wiki/Diluc">More info...</a>
+               href="https://genshin-impact.fandom.com/wiki/@(Model.Name)">More info...</a>
         </div>
     </nav>
 </main>
