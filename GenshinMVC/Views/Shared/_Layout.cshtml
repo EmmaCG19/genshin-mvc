@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <nav aria-label="primary" class="navbar navbar-expand-md mb-4">
+    <nav aria-label="primary" class="navbar navbar-expand-md">
         <a class="brand" href="#">
             <img src="https://static.wikia.nocookie.net/gensin-impact/images/5/5a/Enemy_Cryo_Abyss_Mage_Icon.png"
                  alt="page_icon" />
@@ -48,12 +48,13 @@
         </div>
     </nav>
 
-
-    <div class="container-md">
-        @RenderBody()
+    <div class="content-wrapper">
+        <div class="container-md">
+            @RenderBody()
+        </div>
     </div>
 
-    <footer class="footer fixed-bottom footer-bg">
+    <footer class="footer footer-bg">
         <div class="container-fluid">
             <div class="row d-flex justify-content-center align-content-center">
                 <span>Made with <i class="fas fa-heart"></i> by Fernandez Emmanuel</span>

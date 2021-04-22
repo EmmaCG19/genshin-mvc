@@ -4,6 +4,8 @@
 
 :root {
     --content-bg: #222431;
+    --content-height: 100vh;
+    --footer-height: 30px;
     --sm-breakpoint: 576px;
     --md-breakpoint: 768px;
     --lg-breakpoint: 992px;
@@ -25,7 +27,7 @@
     box-sizing: border-box;
 }
 
-html {
+/*html {
     background: url(https://wallpapercave.com/wp/wp7487214.jpg) no-repeat center center fixed;
     --webkit-background-size: cover;
     --moz-background-size: cover;
@@ -40,6 +42,43 @@ body {
     color: #fff;
     height: 80vh;
     background: transparent;
+}
+*/
+
+
+html::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    background: url(https://wallpapercave.com/wp/wp7487214.jpg) no-repeat center center fixed;
+    --webkit-background-size: cover;
+    --moz-background-size: cover;
+    --o-background-size: cover;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.content-wrapper {
+    position: relative;
+    flex: 1 0 auto;
+    padding: 20px 0;
 }
 
 a,
@@ -65,7 +104,7 @@ a:hover {
     box-shadow: inset -5px 0 20px 1px var(--color-cryo);
     border-radius: 50px;
     padding: 5px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
     .brand img {
@@ -80,18 +119,15 @@ a:hover {
 
 /* Footer */
 .footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    height: auto;
-    margin-top: 30px;
-    padding: 30px 0;
+    flex-shrink: 0;
     line-height: 1.6;
+    padding: 20px 0;
 }
 
 .footer-bg {
     border-top: 1px solid #36384a;
-    background: #222431;
+    background: var(--content-bg);
 }
 
 /* Content */
@@ -293,10 +329,11 @@ a:hover {
 }
 
 /*Helpers*/
+
 /*span,
 h2,
 div,
-input,
+.footer,
 .col-md-1,
 .col-md-2,
 .col-md-3,
