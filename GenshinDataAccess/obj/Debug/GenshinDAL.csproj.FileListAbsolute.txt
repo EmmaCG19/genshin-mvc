@@ -1,9 +1,0 @@
-C:\Users\emman\source\repos\GenshinSample\GenshinDataAccess\bin\Debug\GenshinDAL.dll
-C:\Users\emman\source\repos\GenshinSample\GenshinDataAccess\bin\Debug\GenshinDAL.pdb
-C:\Users\emman\source\repos\GenshinSample\GenshinDataAccess\bin\Debug\GenshinLibrary.dll
-C:\Users\emman\source\repos\GenshinSample\GenshinDataAccess\bin\Debug\GenshinLibrary.pdb
-C:\Users\emman\source\repos\GenshinSample\GenshinDataAccess\obj\Debug\GenshinDAL.csprojAssemblyReference.cache
-C:\Users\emman\source\repos\GenshinSample\GenshinDataAccess\obj\Debug\GenshinDAL.csproj.CoreCompileInputs.cache
-C:\Users\emman\source\repos\GenshinSample\GenshinDataAccess\obj\Debug\GenshinDAL.csproj.CopyComplete
-C:\Users\emman\source\repos\GenshinSample\GenshinDataAccess\obj\Debug\GenshinDAL.dll
-C:\Users\emman\source\repos\GenshinSample\GenshinDataAccess\obj\Debug\GenshinDAL.pdb
