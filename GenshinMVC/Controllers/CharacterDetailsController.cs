@@ -72,7 +72,7 @@ namespace GenshinMVC.Controllers
 
             if (model == null)
             {
-                return View("Error");
+                return HttpNotFound();
             }
 
             //Get actual name and save it in a temporary state object

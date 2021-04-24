@@ -7,7 +7,8 @@ namespace GenshinMVC
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            //Remove this filter for error custom handling
+            //filters.Add(new HandleErrorAttribute());
         }
     }
 }
