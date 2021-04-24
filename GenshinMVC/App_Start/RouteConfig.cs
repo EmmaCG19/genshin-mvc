@@ -14,6 +14,12 @@ namespace GenshinMVC
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Errors",
+                url: "oops/{action}",
+                defaults: new { controller = "Error" }
+            );
+
+            routes.MapRoute(
                 name: "Character-Details",
                 url: "characters/{id}/details/{action}",
                 defaults: new { controller = "CharacterDetails", id = UrlParameter.Optional }
