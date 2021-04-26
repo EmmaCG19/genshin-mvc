@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GenshinMVC.Helpers
+namespace GenshinMVC.Helpers.DALMapper
 {
     public interface ICharacterDALMapper
     {

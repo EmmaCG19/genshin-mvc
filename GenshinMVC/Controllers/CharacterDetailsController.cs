@@ -1,6 +1,6 @@
 ﻿using GenshinDAL;
 using GenshinLibrary;
-using GenshinMVC.Helpers;
+using GenshinMVC.Helpers.DALMapper;
 using GenshinMVC.Models;
 using System;
 using System.Collections.Generic;
@@ -10,6 +10,7 @@ using System.Web.Mvc;
 
 namespace GenshinMVC.Controllers
 {
+    [HandleError]
     public class CharacterDetailsController : Controller
     {
         const string ACTUAL_NAME_KEY = "actualName";

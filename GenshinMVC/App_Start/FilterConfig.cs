@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using GenshinMVC.Helpers.Filters;
+using System.Web;
 using System.Web.Mvc;
 
 namespace GenshinMVC
@@ -8,7 +9,8 @@ namespace GenshinMVC
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             //Remove this filter for error custom handling
-            //filters.Add(new HandleErrorAttribute());
+            //filters.Add(new HandleErrorAttribute());.
+            filters.Add(new LogExceptionAttribute());
         }
     }
 }

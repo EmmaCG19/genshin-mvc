@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace GenshinMVC.Helpers
+namespace GenshinMVC.Helpers.DALMapper
 {
     public class CharacterDALMapper
     {
