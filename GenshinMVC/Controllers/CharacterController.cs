@@ -1,6 +1,6 @@
 ﻿using GenshinDAL;
 using GenshinLibrary;
-using GenshinMVC.Helpers;
+using GenshinMVC.Helpers.DALMapper;
 using GenshinMVC.Models;
 using System;
 using System.Collections.Generic;

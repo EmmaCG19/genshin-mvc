@@ -130,8 +130,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\CharacterDALMapper.cs" />
-    <Compile Include="Helpers\ICharacterDALMapper.cs" />
+    <Compile Include="Helpers\DALMapper\CharacterDALMapper.cs" />
+    <Compile Include="Helpers\DALMapper\ICharacterDALMapper.cs" />
+    <Compile Include="Helpers\Filters\LogExceptionAttribute.cs" />
     <Compile Include="Models\CharacterVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -283,8 +284,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Helpers\DALMapper\" />
-    <Folder Include="Helpers\Validators\" />
     <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
